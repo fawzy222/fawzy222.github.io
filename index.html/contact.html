@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="/style.css/style.css">
+</head>
+<body id="contact-page">
+
+    <header>
+        <h2>Lets Connect!</h2>
+        <a href="/index.html/index.html">Home</a>
+        <a href="/index.html/about.html">About Me</a>
+        <a href="/index.html/skills.html">Skills</a>
+        <a href="/index.html/projects.html">Projects</a>
+    </header>
+    <div class="controls">
+        <label class="toggle-switch">
+          Dark Mode
+          <input type="checkbox" id="dark-mode-toggle">
+          <div class="toggle-switch-border">
+            <div class="toggle-switch-dot"></div>
+          </div>
+        </label>
+      </div>
+    <section class="contact">
+        <div>
+            <br>
+            <br>
+            <br>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send your request</h3>
+                    <form onsubmit="sendEmail(); reset(); return false">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name:</label>
+                                <input type="text" placeholder="Hello World">
+                            </div>
+                            <div class="input-group">
+                                <label>Phone:</label>
+                                <input type="text" placeholder="+01 444 444 4444">
+                            </div>
+                            <div class="input-group">
+                                <label>Email:</label>
+                                <input type="email" placeholder="Hello.World@gmail.com">
+                            </div>
+                            <div class="input-group">
+                                <label>Subject:</label>
+                                <input type="text" placeholder="Hello World">
+                            </div>
+                        </div>
+                        <label>Message</label>
+                        <textarea rows="6" placeholder="your message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Me</h3>
+                    <table>
+                        <tr>
+                            <td>&#128231 Email</td>
+                            <td>fawzy.coding@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>&#128242 Phone</td>
+                            <td>+01 407-790-1137</td>
+                        </tr>
+                        <tr>
+                            <td>&#128205 Location </td>
+                            <td> Los Angeles, California</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js
+    "></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "fawzyPortfolioEmail@gmail.com",
+                Password : "58E3496BF8373AA8F68E3738F78737F13853",
+                To : 'fawzy.coding@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "Name: " + document.getElementById("name").value 
+                 + "<br> Email: " + document.getElementById("email").value
+                 + "<br> Phone no: " + document.getElementById("phone").value
+                 + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert(" Message sent successfully")
+            );
+        }
+    </script>
+    <script src="/script.js/script.js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h2>Fawzy Alkhaldi</h2>
+        <div id="contact-btns">
+        <a href="/about.html">About Me</a>
+        <a href="/skills.html">Skills</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/contact.html">Contact Me</a>
+    </div>
+    </header>
+
+    <div class="controls">
+        <label class="toggle-switch">
+          Dark Mode
+          <input type="checkbox" id="dark-mode-toggle">
+          <div class="toggle-switch-border">
+            <div class="toggle-switch-dot"></div>
+          </div>
+        </label>
+      </div>
+
+    <section id="landing-bio">
+        <div>
+            <img src="/images/profil pic Medium.jpeg">
+        </div>
+        <div id="bio-txt">
+            <h2>Hello! My name is Fawzy.
+                <br>
+                <br>
+                I am a freelance Web Developer and Shopify Expert</h2>
+            <h4>I am a self taught programmer. I started learning to code in 2020 during the COVID-19 lockdown. 
+                I started with Python 3 as an introduction to programming. Afterwords I took courses in HTML, CSS and Javascript.
+                In my free time I like to read and watch &#9917 soccer/futbol.
+             </h4>
+             <a href="/portfolio/projects.html">See my work</a>
+        </div>
+    </section>
+    <section id="skills">
+        <h1>Skills</h1>
+        <div id="skills-list">
+            <p>&#9989 HTML </p>
+            <p>&#9989 CSS</p>
+            <p>&#9989 Javascript</p>
+            <p>&#9989 Python</p>
+        </div>
+            <div id="skills-img">
+                <div id="img-group1">
+                <img src="/index.html/images/python 3 cert.pdf">
+                <img src="/index.html/images/JS cert.pdf">
+                </div>
+                <div id="img-group2">
+                <img src="/index.html/images/css cert.pdf">
+                <img src="/index.html/images/html cert.pdf">
+                </div>
+            </div> 
+        <div id="current-proj">
+        <h3>Currently, I am working on...&#9203</h3>
+        <h4>Front End Engineer Career Path from Codecademy</h4>
+        <div class="progress-bar">
+            <div class="front-end-course"><span>60%</span></div>
+        </div>
+        <h4>React</h4>
+        <div class="progress-bar">
+            <div class="react"><span>10%</span></div>
+        </div>
+        </div>
+    </section>
+    <section class="projects">
+        <h1>Recent Projects</h1>
+        <div class="project1">
+            <h3>Create a blog!</h3>
+            <img src="/index.html/images/blog-proj.png">
+            <a type="submit" href="https://codepen.io/fawzy22/pen/ExEvaQd" target="_blank" >See More</a>
+        </div>
+        <div class="project2">
+            <h3>Shopify Coffee Store</h3>
+            <img src="/index.html/images/ezgif.com-gif-maker.gif">
+            <a type="submit" href="/docs/index.html/contact.html/">Request Store Demo</a>
+        </div>
+        <div class="project3">
+            <h3>Coming Soon Landing Page</h3>
+            <img src="/index.html/images/landing-page-proj.png">
+            <a type="submit" href="https://codepen.io/fawzy22/pen/popoLzL" target="_blank">See More</a>
+        </div>
+    </section>
+    <section class="contact">
+        <div>
+            <h1>Connect with me</h1>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send your request</h3>
+                    <form onsubmit="sendEmail(); reset(); return false">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name:</label>
+                                <input type="text" placeholder="Hello World">
+                            </div>
+                            <div class="input-group">
+                                <label>Phone:</label>
+                                <input type="text" placeholder="+01 444 444 4444">
+                            </div>
+                            <div class="input-group">
+                                <label>Email:</label>
+                                <input type="email" placeholder="Hello.World@gmail.com">
+                            </div>
+                            <div class="input-group">
+                                <label>Subject:</label>
+                                <input type="text" placeholder="Hello World">
+                            </div>
+                        </div>
+                        <label>Message</label>
+                        <textarea rows="6" placeholder="your message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Me</h3>
+                    <table>
+                        <tr>
+                            <td>&#128231 Email</td>
+                            <td>fawzy.coding@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>&#128242 Phone</td>
+                            <td>+01 407-790-1137</td>
+                        </tr>
+                        <tr>
+                            <td>&#128205 Location </td>
+                            <td> Los Angeles, California</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js
+    "></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "fawzyPortfolioEmail@gmail.com",
+                Password : "58E3496BF8373AA8F68E3738F78737F13853",
+                To : 'fawzy.coding@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "Name: " + document.getElementById("name").value 
+                 + "<br> Email: " + document.getElementById("email").value
+                 + "<br> Phone no: " + document.getElementById("phone").value
+                 + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert(" Message sent successfully")
+            );
+        }
+    </script>
+    <script src="/portfolio/script.js"></script>
+</body>
+<footer></footer>
+</html>
