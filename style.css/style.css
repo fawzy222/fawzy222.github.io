@@ -150,7 +150,7 @@ header h2{
     align-items: center;
     width: 100%;
     height: 1000px;
-    align-items: center;
+    
     
 }
 #skills-page header a{
@@ -505,17 +505,124 @@ header a{
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 500px) {
 
     body{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       max-width: 80%;
+       max-height: fit-content;
+       padding: 20px;
+       justify-content: center;
+       align-items: center;
+       
+    }
+    /* bio and nav section*/
+    header{
+        height: 300px;
+        display: flex;
+        
+    }
+    header h2{
+        margin-top: 0px;
+    }
+    header a{
+        display: flex;
+        left:0;
+        top:90px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .controls{
+        display: block;
+        margin-bottom: auto;
+    }
+    #landing-bio{
+        display: flex;
+        max-width: fit-content;
+        flex-wrap: wrap;
+        margin:5px 5px;
+    }
+    #landing-bio img{
+       width: 370px;
+       height: 370px;
+       margin-right: auto;
+       margin-top: auto;
+    }
+    #bio-txt {
+        margin-left: 10px;
+        margin-top: 30px;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: fit-content;
+    }
+    /* end bio and nav section*/
+    /* begin skills section*/
+    #skills{
+        display: flex;
+        flex-direction:column;
+        height:1400px;
+        
+    }
+    #skills-list{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+    max-width: fit-content;
+    align-items: center;
+    }
+    #skills-img{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+    }
+    #skills h1{
+        margin: 15px 0px;
+        margin-left: 0px;
+    
+    }
+    /* end skills section*/
+
+    /* begin project section*/
+    #current-proj{
+        display:none;
+
+        
+    }
+    .projects{
+        width:100%;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        margin-left: 25px;
+       
+    }
+    .projects img{
+        width: 95%;
+    }
+     /* end project section*/
+    .contact{
+        display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 600px;
+        margin-right: 50px;
+        height: auto;
+        width: auto;
+        
     }
-    header{
+    .contact div{
+        display: block;
+        max-width: 500px;
+        
+    }
+    .contact h1{
+        margin-bottom: 55px;
+        margin-left: 0px;
+        font-size: 38px;
+        font-family: monospace;
+    }
+}
+    /* header{
         height: 250px;
     }
     header a{
@@ -604,9 +711,4 @@ header a{
         justify-content: space-between;
     }
 }
-
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
+*/
