@@ -507,6 +507,7 @@ header a{
 /* Extra small devices (phones, 600px and down) */
 @media all and (max-width: 500px) {
 
+    
     body{
        display: flex;
        flex-direction: column;
@@ -543,13 +544,15 @@ header a{
         max-width: fit-content;
         flex-wrap: wrap;
         margin:5px 5px;
+        justify-content: center;
+        
     }
     #landing-bio img{
-       width: 370px;
-       height: 370px;
-       margin-right: auto;
-       margin-top: auto;
-    }
+       
+        margin-right: 90px;
+        margin-top: auto;
+        
+     }
     #bio-txt {
         margin-left: 10px;
         margin-top: 30px;
@@ -622,93 +625,3 @@ header a{
         font-family: monospace;
     }
 }
-    /* header{
-        height: 250px;
-    }
-    header a{
-        display: flex;
-        left:0;
-        top:90px;
-    }
-    #bio-txt {
-        margin-left: 10px;
-        margin-top: 30px;
-    }
-    #skills{
-        height: 1200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 100px;
-    }
-    #skills-list{
-        margin-left: 0px;
-    
-    }
-    #skills-img{
-        display: flex;
-        flex-direction: column;
-    }
-    #skills h1{
-        margin-top:-700px;
-        margin-left: 0px;
-        
-    }
-    #current-proj{
-            display:none;
-            
-        }
-        .projects{
-            width:90%;
-            margin-top: 30px;
-            margin-bottom: 70px;
-            margin-left: 25px;
-           
-    }
-    .contact{
-        padding-bottom: 40px;
-    }
-    .contact-box{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .contact h1{
-        margin-bottom: 55px;
-        margin-left: 0px;
-        font-size: 38px;
-        font-family: monospace;
-    }
-    #aboutme-body{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        max-width: 600px;
-    }
-    #aboutme-body header{
-    margin-bottom: 50px;
-    margin-right: 0px;
-    flex-direction: column;
-    height: 400px;
-    }
-    .about-me a{
-        position:relative;
-        left:0px;
-        top:-10px;
-        
-    }
-    #work , #personal{
-        flex-wrap: wrap;
-        max-width: 500px;
-    }
-    #aboutme-imgs{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
-*/

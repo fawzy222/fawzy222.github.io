@@ -1,0 +1,36 @@
+@media all and (max-width: 500px){
+#aboutme-body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    
+}
+#aboutme-body header{
+margin-bottom: 50px;
+margin-right: 0px;
+flex-direction: column;
+height: 400px;
+}
+.about-me a{
+    position:relative;
+    left:0px;
+    top:-10px;
+    
+}
+#work , #personal{
+    flex-wrap: wrap;
+    max-width: 500px;
+    max-width: fit-content;
+    margin: 15px 20px;
+}
+#aboutme-imgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+}
