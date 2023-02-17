@@ -512,7 +512,7 @@ header a{
        display: flex;
        flex-direction: column;
        flex-wrap: wrap;
-       max-width: 80%;
+       max-width:min-content;
        max-height: fit-content;
        padding: 20px;
        justify-content: center;
@@ -523,10 +523,12 @@ header a{
     header{
         height: 300px;
         display: flex;
+        align-items: center;
         
     }
     header h2{
         margin-top: 0px;
+        left: 50px;
     }
     header a{
         display: flex;
@@ -545,14 +547,15 @@ header a{
         flex-wrap: wrap;
         margin:5px 5px;
         justify-content: center;
-        
+        padding-right: 50px;
     }
     #landing-bio img{
        
-        margin-right: 90px;
+        margin-left: -17px;
         margin-top: auto;
         
      }
+    
     #bio-txt {
         margin-left: 10px;
         margin-top: 30px;
@@ -608,7 +611,7 @@ header a{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 50px;
+       
         height: auto;
         width: auto;
         

@@ -1,0 +1,17 @@
+@media all and (max-width: 500px){
+body{
+    max-width: fit-content;
+
+}
+header{
+    display: block;
+    
+}
+header a{
+    margin-left: -350px;
+    margin-bottom: 25px;
+}
+.contact{
+    margin: auto;
+}
+}

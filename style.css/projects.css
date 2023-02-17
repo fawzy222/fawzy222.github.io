@@ -1,0 +1,20 @@
+@media all and (max-width: 500px){
+    #proj-header{
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: space-between;
+        align-items: center;
+        padding:40px 0px;
+    }
+    #proj-header a{
+            display: flex;
+             top: 50px;
+    }
+    body{
+        max-width: fit-content;
+        max-height: fit-content;
+        padding: 10px;
+        margin-right: 50px;
+    }
+
+}
