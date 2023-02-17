@@ -2,6 +2,8 @@ body{
     background: var(--background);
     color: var(--primary);
     padding: 20px;
+    display:flex;
+    flex-wrap:wrap ;
     max-width:1024px;
     margin: 0 auto;
     font-family: monospace;
@@ -233,7 +235,8 @@ border-bottom:3px dotted #438BCF;
     justify-content: center;
 }
 .front-end-course{
-animation: front-end-course 1s linear forwards;
+animation: front-end-course 3s linear forwards;
+animation-delay: 6s
 }
 @keyframes front-end-course{
     100%{
@@ -245,9 +248,10 @@ animation: front-end-course 1s linear forwards;
     border-radius: 5px;
     width: 0;
     background-color:black;
+    animation-delay: 6s;
 }
 .react{
-    animation: react 1s linear forwards;
+    animation: react 2s linear forwards;
     }
     @keyframes react{
         100%{
@@ -337,7 +341,7 @@ animation: front-end-course 1s linear forwards;
     display: flex;
     height: 550px;
     font-family: monospace;
-    
+    margin-left: 70px;
 }
 .contact-left{
     flex-basis: 60%;
@@ -504,6 +508,34 @@ header a{
 
 }
 
+@media all and (max-width: 900px){
+    header{
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header h2{
+        margin-top: 0px;
+        
+    }
+    #contact-btns{
+        display: flex;
+        flex-direction: row;
+       margin-top: 50px;
+        
+    }
+    #contact-btns a{
+        display: flex;
+        left:0;
+        top:40px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        margin-left: 15px;
+    }
+}
 /* Extra small devices (phones, 600px and down) */
 @media all and (max-width: 500px) {
 
@@ -521,22 +553,27 @@ header a{
     }
     /* bio and nav section*/
     header{
-        height: 300px;
+        height: 400px;
         display: flex;
-        align-items: center;
         
+        flex-direction: column;
+        justify-content: center;
     }
     header h2{
-        margin-top: 0px;
-        left: 50px;
+        top: 30px;
+        
+    }
+    #contact-btns{
+        margin-left: -70px;
+        flex-direction: column;
     }
     header a{
         display: flex;
-        left:0;
-        top:90px;
-        margin: auto;
-        margin-top: 10px;
-        margin-bottom: 25px;
+        flex-direction: column;
+        
+        
+        margin-top: 0px;
+        margin-bottom: 5px;
     }
     .controls{
         display: block;
@@ -612,8 +649,9 @@ header a{
         display: flex;
         align-items: center;
         justify-content: center;
-       
-        height: auto;
+        margin-left: -50px;
+        
+        height:fit-content;
         width: auto;
         
     }
@@ -624,7 +662,7 @@ header a{
     }
     .contact h1{
         margin-bottom: 55px;
-        margin-left: 0px;
+        margin-left: 70px;
         font-size: 38px;
         font-family: monospace;
     }
