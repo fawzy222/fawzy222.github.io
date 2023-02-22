@@ -1,3 +1,84 @@
+.projects{
+    width:800px;
+    height:100%;
+    background-color: #438BCF;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    margin-left: 95px;
+   padding-top: 20px;
+   padding-bottom:20px ;
+   justify-content:flex-start;
+   font-family: monospace;
+}
+.projects img{
+    width: 400px;
+    height:250px ;
+    border: 2px solid black;
+}
+.project1{
+   display: flex;
+   flex-direction: column;
+   margin-top: 50px;
+   align-items: center;
+}
+.project2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project4{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project5{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects a{
+    margin: 20px;
+   border-radius: 10%;
+   width: 160px;
+   height: 30px;
+   background-color: #cf8743;
+   box-shadow: 5px 5px #333;
+   text-align: center;
+   padding-top: 15px;
+   text-decoration: none;
+   
+}
+.projects button{
+   margin: 20px 0; 
+   background-color: #cf8743;
+   box-shadow: 5px 5px #333;
+}
+.projects h1{
+   font-size: 35px;
+   font-weight: 800px;
+   position: relative;
+   left: 250px;
+   
+}
+.projects h3{
+   font-size:20px ;
+}
+#proj-header{
+    padding-right: 50px;
+    
+}
+#proj-header a{
+    position: relative;
+    left: 450px;
+    
+}
 @media all and (max-width: 500px){
     #proj-header{
         display: flex;
