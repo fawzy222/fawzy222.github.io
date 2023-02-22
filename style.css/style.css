@@ -105,7 +105,7 @@ header a{
     font-weight: 500;
     position:relative;
     margin: 10px;
-    left: 510px;
+    left: 650px;
     text-decoration: none;
     color: black;
 
@@ -265,25 +265,33 @@ animation-delay: 6s
 
 
 
-
-.contact-box{
-    background-color: #fff;
+.contact{
     display: flex;
-    height: 550px;
-    font-family: monospace;
-    margin-left: 70px;
+    align-items: center;
+    justify-content: center;
 }
-.contact-left{
+.contact-box{
+    background-color: #438BCF;
+    display: flex;
+    height: 350px;
+    font-family: monospace;
+    margin-left: 95px;
+    width: 800px;
+}
+/*.contact-left{
     flex-basis: 60%;
     padding: 40px 60px;
-}
+}*/
 .contact-right{
-    flex-basis: 40%;
+  
     padding: 40px;
     background-color:#438BCF;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
+    color: #FFFFE3;
+    width: 800px;
+    padding-left: 150px;
 }
 .contact h1{
     margin-bottom: 55px;
@@ -291,7 +299,7 @@ animation-delay: 6s
     font-size: 38px;
     font-family: monospace;
 }
-.input-row{
+/* .input-row{
     width: 330px;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -328,7 +336,7 @@ button{
     height: 35px;
     border-radius: 30px;
     box-shadow: 0px 5px 15px rgba(28, 0, 181, 0.3);
-}
+}*/
 .contact-left h3{
     color: #438BCF;
     font-weight: 600;
@@ -337,7 +345,7 @@ button{
 }
 .contact-right h3{
     color:#cf8743;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -367,13 +375,16 @@ tr td{
 }
 .about-me a{
     position:relative;
-    left:190px;
+    left:350px;
     width:120px;
     
 }
 .about-me .controls{
     margin-top: 20px;
     margin-left: 30px;
+    position: relative;
+    top: 50px;
+    left: 150px;
 }
 #resume img{
     background-color: white;
