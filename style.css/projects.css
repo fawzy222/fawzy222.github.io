@@ -108,3 +108,42 @@
     }
 
 }
+@media all and (max-width: 1000px){
+    #proj-header a{
+        display: flex;
+        left: 0px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        top: 100px;
+        margin-left: 30px;
+    }
+    #proj-header{
+        display: flex;
+        margin-bottom: 25px;
+        justify-content: center;
+        align-items: center;
+        height: 350px;
+        margin-left: 50px;
+    } 
+    #proj-header h1{
+        font-size: 35px;
+        font-weight: 800px;
+        position: relative;
+        left: 250px;
+        
+     }
+     .projects{
+        width:700px;
+        height:100%;
+        background-color: #438BCF;
+        margin-top: 60px;
+        margin-bottom: 70px;
+        margin-left: 50px;
+       padding-top: 20px;
+       padding-bottom:20px ;
+       justify-content:flex-start;
+       font-family: monospace;
+    }
+}

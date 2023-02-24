@@ -441,15 +441,15 @@ tr td{
         flex-direction: column;
     }
     header{
-        flex-direction: column;
+        flex-direction: row;
 }
 header a{
-    margin: 5px 200px;
+    margin: 5px 0px;
 }
 
 }
 
-@media all and (max-width: 900px){
+@media all and (max-width: 1000px){
     header{
         
         display: flex;
