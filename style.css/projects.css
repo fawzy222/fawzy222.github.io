@@ -84,19 +84,27 @@
     #proj-header{
         display: flex;
         margin-bottom: 40px;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding:40px 0px;
+        
     }
     #proj-header a{
-            display: flex;
-             top: 50px;
+        display: flex;
+        left: 0px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 150px;
     }
     body{
         max-width: fit-content;
         max-height: fit-content;
         padding: 10px;
-        margin-right: 50px;
+       
+    }
+    html{
+        max-width: 500px;
     }
 
 }

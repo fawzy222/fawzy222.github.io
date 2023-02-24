@@ -14,4 +14,7 @@ header a{
 .contact{
     margin: auto;
 }
+.contact-right{
+    right: 100px;
+}
 }

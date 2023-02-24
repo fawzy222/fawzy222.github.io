@@ -527,6 +527,7 @@ header a{
         margin:5px 5px;
         justify-content: center;
         padding-right: 50px;
+        max-height: fit-content;
     }
     #landing-bio img{
        
@@ -550,6 +551,17 @@ header a{
         flex-direction:column;
         height:1400px;
         
+    }
+    #skills-page header{
+        height: 200px;
+    }
+    #skills-page header a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 110px;
+        margin-top: 15px;
+        padding-bottom: 10px;
     }
     #skills-list{
     display: flex;
@@ -606,5 +618,11 @@ header a{
         margin-left: 70px;
         font-size: 38px;
         font-family: monospace;
+    }
+    .contact-right{
+        margin-left: -120px;
+    }
+    html{
+        max-width: 800px;
     }
 }
