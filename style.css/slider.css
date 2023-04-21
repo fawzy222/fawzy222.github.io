@@ -1,0 +1,46 @@
+#quotes img {
+    width:  25px !important;
+    height: 25px !important;
+}
+.outer-ctn{
+    max-width: 1000px !important;
+    max-height: 700px !important;
+}
+.inner-ctn{
+    width:500px !important;
+    height: 400px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-color: #438BCF;
+    margin: 15px;
+    font-family: monospace;
+    }
+.slick-list.draggable{
+    max-height: 550px !important;
+}
+.quotes img {
+    width:  550px !important;
+    height: 350px !important;
+    margin: auto;
+}
+.text-ctn{
+    font-size: 28px;
+}
+.testimonial-ctn a{
+    display:block;
+    border-radius: 10%;
+    width: 100px !important;
+    height: 30px !important;
+    background-color: #cf8743;
+    box-shadow: 2px 2px #333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+    margin: auto;
+}

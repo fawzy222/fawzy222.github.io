@@ -1,12 +1,10 @@
 .projects{
-    width:800px;
-    height:100%;
+    width:1200px;
+    height:700px;
     background-color: #438BCF;
-    margin-top: 60px;
-    margin-bottom: 70px;
-    margin-left: 95px;
+    margin: auto;
    padding-top: 20px;
-   padding-bottom:20px ;
+   padding-bottom:10px ;
    justify-content:flex-start;
    font-family: monospace;
    box-shadow:  8px 8px grey;
@@ -52,7 +50,6 @@
    width: 160px;
    height: 30px;
    background-color: #cf8743;
-   box-shadow: 5px 5px #333;
    text-align: center;
    padding-top: 15px;
    text-decoration: none;
@@ -61,7 +58,6 @@
 .projects button{
    margin: 20px 0; 
    background-color: #cf8743;
-   box-shadow: 5px 5px #333;
 }
 .projects h1{
    font-size: 35px;
