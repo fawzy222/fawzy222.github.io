@@ -16,7 +16,7 @@
     text-align: center;
     padding: 20px;
     background-color: #438BCF;
-    margin: 15px;
+    margin: 20px;
     font-family: monospace;
     }
 .slick-list.draggable{
@@ -31,15 +31,16 @@
     font-size: 28px;
 }
 .testimonial-ctn a{
-    display:block;
+    font-family: monospace;
     border-radius: 10%;
+    padding: 10px;
     width: 100px !important;
     height: 30px !important;
     background-color: #cf8743;
     box-shadow: 2px 2px #333;
     text-align: center;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
     position: relative;
     text-decoration: none;
     margin: auto;
