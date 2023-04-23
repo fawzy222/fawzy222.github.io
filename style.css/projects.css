@@ -3,7 +3,7 @@
     height:700px;
     background-color: #438BCF;
     margin: auto;
-   padding-top: 20px;
+   padding-top: 30px;
    padding-bottom:10px ;
    justify-content:flex-start;
    font-family: monospace;
@@ -71,9 +71,8 @@
 .projects h1{
    font-size: 35px;
    font-weight: 800px;
-   position: relative;
-   left: 250px;
-   
+   text-align: center;
+   margin: auto;
 }
 .projects h3{
    font-size:20px ;
