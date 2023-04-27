@@ -1,3 +1,6 @@
+*{
+    font-family: 'Philosopher', sans-serif !important;
+}
 .projects{
     width:1200px;
     height:700px;
@@ -6,7 +9,6 @@
    padding-top: 30px;
    padding-bottom:10px ;
    justify-content:flex-start;
-   font-family: monospace;
    box-shadow:  8px 8px grey;
 }
 #project-page-ctn{
@@ -140,16 +142,11 @@
         left: 250px;
         
      }
-     .projects{
-        width:700px;
-        height:100%;
-        background-color: #438BCF;
-        margin-top: 60px;
-        margin-bottom: 70px;
-        margin-left: 50px;
-       padding-top: 20px;
-       padding-bottom:20px ;
-       justify-content:flex-start;
-       font-family: monospace;
+     
+    #project-page-ctn {
+        width: 700px;
+        height: 2200px;
+        margin-top: 80px;
+        margin: 60px auto;
     }
 }

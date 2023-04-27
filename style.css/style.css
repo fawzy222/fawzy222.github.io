@@ -5,8 +5,8 @@ body{
     display:flex;
     flex-wrap:wrap ;
     max-width:1024px;
-    margin: 0 auto;
-    font-family: monospace;
+    margin: 30px auto;
+    font-family: 'Philosopher', sans-serif !important;
     --dark-background: #253a52;
   --dark-primary: #FFFFE3;
   --dark-link: #A9FE75;
@@ -78,8 +78,7 @@ body{
     height: 400px;
     width:400px;
     border-radius: 70%;
-    margin-top: 150px;
-    margin-left: 20px;
+    margin:auto;
     image-rendering: optimizeQuality;
     box-shadow:  5px 5px 5px gray;
     object-fit: cover;
@@ -113,14 +112,14 @@ header a{
 header h2{
     position: absolute;
     font-size: 40px;
-    font-family:monospace;
+    
     
 }
 #bio-txt{
     width:500px;
     margin-left: 100px;
     margin-top: 125px;
-    font-family:'Courier New', Courier, monospace;
+   
     
     
 }
@@ -162,7 +161,7 @@ header h2{
 }
 #skills-list{
 width: 500px;
-font-family: monospace;
+
 font-size: 20px;
 margin-left: 200px;
 display: flex;
@@ -198,7 +197,7 @@ border-bottom:3px dotted #438BCF;
     position:relative;
     left: 150px;
     top: 250px;
-    font-family: monospace;
+
     font-size: 20px;
 }
 #current-proj h3{
@@ -265,97 +264,7 @@ animation-delay: 6s
 
 
 
-.contact{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.contact-box{
-    background-color: #438BCF;
-    display: flex;
-    height: 450px;
-    font-family: monospace;
-    margin-left: 95px;
-    width: 800px;
-    box-shadow:  8px 8px grey;
-}
-/*.contact-left{
-    flex-basis: 60%;
-    padding: 40px 60px;
-}*/
-.contact-right{
-  
-    padding: 40px;
-    background-color:#438BCF;
-    font-family: monospace;
-    font-size: 18px;
-    font-weight: 500;
-    color: #FFFFE3;
-    width: 800px;
-    padding-left: 150px;
-}
-.contact h1{
-    margin-bottom: 55px;
-    margin-left: 340px;
-    font-size: 38px;
-    font-family: monospace;
-}
-/* .input-row{
-    width: 330px;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-.input-row .input-group{
-    
-    flex-basis: 45%;
-}
-input{
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    outline: none;
-    padding-bottom: 10px;
-}
-textarea{
-    width: 90%;
-    border: 1px solid #ccc;
-    outline: none;
-    padding: 10px;
-    box-sizing: border-box;
-}
-label{
-    margin-bottom:6px ;
-    display: block;
-    color: #333;
-}
-button{
-    background-color:#438BCF;
-    width: 100px;
-    border: none;
-    outline: none;
-    color:black;
-    height: 35px;
-    border-radius: 30px;
-    box-shadow: 0px 5px 15px rgba(28, 0, 181, 0.3);
-}*/
-.contact-left h3{
-    color: #438BCF;
-    font-weight: 600;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-.contact-right h3{
-    color:#cf8743;
-    font-size: 38px;
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-tr td:first-child{
-    padding-right: 30px;
-}
-tr td{
-    padding-top: 30px;
-}
+
 /* /////////////////// css for the about me page /////////////////////// */
 
 .about-me{
@@ -368,7 +277,7 @@ tr td{
     justify-content: center;
 }
 .about-me header{
-    font-family: monospace;
+  
     font-size: 30px;
     margin-bottom: 70px;
     margin-right: 50px;
@@ -395,7 +304,7 @@ tr td{
     box-shadow: 7px 6px gray;
 }
 #resume p{
-    font-family: monospace;
+  
     font-size: 20px;
     font-weight: 600;
     text-align: center;
@@ -408,7 +317,7 @@ tr td{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: monospace;
+ 
     font-size: 19px;
     line-height: 25px;
     font-weight: 500;
@@ -618,7 +527,7 @@ header a{
         margin-bottom: 55px;
         margin-left: 70px;
         font-size: 38px;
-        font-family: monospace;
+    
     }
     .contact-right{
         margin-left: -120px;
