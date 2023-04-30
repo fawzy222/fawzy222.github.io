@@ -69,8 +69,7 @@ body{
     border-bottom:2px solid #438BCF ;
     padding: 10px;
     padding-bottom: 60px;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin: 60px auto;
     width: 100%;
 
 }
@@ -91,7 +90,7 @@ header{
     padding-bottom: 20px;
     align-items:center;
 }
-header a{
+/*header a{
     
     background-color:#438BCF;
     width: 110px;
@@ -108,6 +107,28 @@ header a{
     text-decoration: none;
     color: black;
 
+} */
+
+#contact-btns{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+#contact-btns a{
+    background-color:#438BCF;
+    width: 110px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 9px 9px;
+    line-height: 15px;
+    text-align: center;
+    font-size:20px;
+    font-weight: 500;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+
 }
 header h2{
     position: absolute;
@@ -117,18 +138,16 @@ header h2{
 }
 #bio-txt{
     width:500px;
-    margin-left: 100px;
-    margin-top: 125px;
-   
-    
-    
+    margin: auto;
 }
 #bio-txt h2{
     font-size: 35px;
 
 }
 #bio-txt h4{
-    font-size: 17px;
+    font-size: 21px;
+   line-height: 25px;
+   font-weight: 500;
     
 }
 #bio-txt a{
@@ -140,7 +159,7 @@ header h2{
     height:30px;
     width: 120px;
     padding-left: 10px;
-    font-size:16px;
+    font-size:19px;
     font-weight: 900;
     color:black;
 }
@@ -267,74 +286,7 @@ animation-delay: 6s
 
 /* /////////////////// css for the about me page /////////////////////// */
 
-.about-me{
-    margin: 0 auto;
-    padding: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.about-me header{
-  
-    font-size: 30px;
-    margin-bottom: 70px;
-    margin-right: 50px;
-    padding: 5px;
-}
-.about-me a{
-    position:relative;
-    left:350px;
-    width:120px;
-    
-}
-.about-me .controls{
-    margin-top: 20px;
-    margin-left: 30px;
-    position: relative;
-    top: 50px;
-    left: 150px;
-}
-#resume img{
-    background-color: white;
-    display: flex;
-    width: 500px;
-    border: 1px solid black; ;
-    box-shadow: 7px 6px gray;
-}
-#resume p{
-  
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 80px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #438BCF;
-}
-#work , #personal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
- 
-    font-size: 19px;
-    line-height: 25px;
-    font-weight: 500;
-}
-#aboutme-imgs{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#aboutme-imgs img{
-    width:400px;
-    height: 500px;
-    margin: 10px 35px;
-    border: 3px solid #0d0d0e;
-    border-radius: 30px;
-    box-shadow: 5px 7px;
-}
+
 #contact-page .controls{
     margin-bottom: 10px;
 }
@@ -342,22 +294,22 @@ animation-delay: 6s
     left:450px;
 }
 
-
-
-
-
-@media (max-width:1024px){
-    #landing-bio{
-        flex-direction: column;
-    }
+@media all and (width:1020px) {
     header{
-        flex-direction: row;
-}
-header a{
-    margin: 5px 0px;
+    display:flex;
+    width: 80%;
+    border-bottom:2px solid #438BCF ;
+    padding-bottom: 20px;
+    align-items:center;
+    justify-content: space-evenly;
+    }
+    #contact-btns{
+        width: 700px ;
+    }
 }
 
-}
+
+
 
 @media all and (max-width: 1000px){
     header{
@@ -374,19 +326,41 @@ header a{
     #contact-btns{
         display: flex;
         flex-direction: row;
-       margin-top: 50px;
-        
+        margin:auto;
+        justify-content: space-around;
+        width: 900px;
     }
     #contact-btns a{
-        display: flex;
-        left:0;
-        top:40px;
-        margin: auto;
-        margin-top: 10px;
-        margin-bottom: 25px;
-        margin-left: 15px;
+        margin-top: 80px;
     }
 }
+@media all and (max-width:800px){
+    body{
+        max-width: 800px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact-btns{
+        width: 500px;
+        position: relative;
+        display: flex;
+    }
+    #landing-bio{
+        flex-direction: column;
+    }
+    .projects{
+        width: 800px;
+    }
+    .outer-contact-ctn{
+        width: 800px;
+        margin-left: 100px !important;
+    }
+    .contact h1{
+        margin-left:250px !important;
+    }
+    }
+
 /* Extra small devices (phones, 600px and down) */
 @media all and (max-width: 500px) {
 
@@ -395,8 +369,7 @@ header a{
        display: flex;
        flex-direction: column;
        flex-wrap: wrap;
-       max-width:min-content;
-       max-height: fit-content;
+        margin: auto;
        padding: 20px;
        justify-content: center;
        align-items: center;
@@ -404,27 +377,28 @@ header a{
     }
     /* bio and nav section*/
     header{
-        height: 400px;
+        height: 350px;
         display: flex;
-        
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
     }
     header h2{
         top: 30px;
         
     }
     #contact-btns{
-        margin-left: -70px;
-        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       top: 50px;
+       right: 30px;
     }
-    header a{
+    #contact-btns a{
         display: flex;
         flex-direction: column;
-        
-        
-        margin-top: 0px;
-        margin-bottom: 5px;
+        justify-content: space-between;
+        margin: 20px auto;
     }
     .controls{
         display: block;
@@ -440,10 +414,7 @@ header a{
         max-height: fit-content;
     }
     #landing-bio img{
-       
-        margin-left: -15px;
-        margin-top: auto;
-        
+       margin: auto;
      }
     
     #bio-txt {
@@ -454,8 +425,7 @@ header a{
         flex-wrap: wrap;
         max-width: fit-content;
     }
-    /* end bio and nav section*/
-    /* begin skills section*/
+  
     #skills{
         display: flex;
         flex-direction:column;
@@ -489,33 +459,24 @@ header a{
         margin-left: 0px;
     
     }
-    /* end skills section*/
 
-    /* begin project section*/
     #current-proj{
         display:none;
-
-        
     }
     .projects{
-        width:100%;
-        margin-top: 30px;
-        margin-bottom: 70px;
-        margin-left: 25px;
+       display: none;
        
     }
-    .projects img{
-        width: 95%;
-    }
-     /* end project section*/
+
+   
     .contact{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: -50px;
-        
+        margin-right: 50px !important;
         height:fit-content;
         width: auto;
+        padding-right: 50px;
         
     }
     .contact div{
@@ -523,9 +484,9 @@ header a{
         max-width: 500px;
         
     }
-    .contact h1{
-        margin-bottom: 55px;
-        margin-left: 70px;
+    .outer-contact-ctn h1{
+        margin-bottom: 50px !important;
+        margin-left: 90px !important;
         font-size: 38px;
     
     }
