@@ -194,9 +194,9 @@ justify-content: space-between;
 border-bottom:3px dotted #438BCF;
 }
 #skills-img{
-    height: 250px;
+    height: 350px;
     width: 350px;
-    margin: 20px 100px;
+    margin: 0px 100px;
     display: flex;
     flex-direction: row;
 }
@@ -222,7 +222,7 @@ border-bottom:3px dotted #438BCF;
     display: inline-block;
     position:relative;
     left: 150px;
-    top: 250px;
+    top: 150px;
 
     font-size: 20px;
 }
