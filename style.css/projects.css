@@ -79,15 +79,8 @@
 .projects h3{
    font-size:20px ;
 }
-#proj-header{
-    padding-right: 50px;
-    
-}
-#proj-header a{
-    position: relative;
-    left: 550px;
-    
-}
+
+
 @media all and (max-width: 500px){
     #proj-header{
         display: flex;
@@ -96,15 +89,7 @@
         align-items: center;
         
     }
-    #proj-header a{
-        display: flex;
-        left: 0px;
-        align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 150px;
-    }
+    
     body{
         max-width: fit-content;
         max-height: fit-content;
@@ -117,16 +102,7 @@
 
 }
 @media all and (max-width: 1000px){
-    #proj-header a{
-        display: flex;
-        left: 0px;
-        align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-        margin-bottom: 0px;
-        top: 100px;
-        margin-left: 30px;
-    }
+   
     #proj-header{
         display: flex;
         margin-bottom: 25px;

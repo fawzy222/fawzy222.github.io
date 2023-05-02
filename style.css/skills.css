@@ -1,9 +1,4 @@
-#skills{
-    display: flex;
-    flex-direction:column;
-    height:1400px;
-    
-}
+
 #skills-list{
 display: flex;
 flex-direction: column;
@@ -14,7 +9,14 @@ align-items: center;
 #skills-img{
     display: flex;
     flex-direction: column;
+    
 }
+ img{
+    transition: transform .2s; 
+}
+ img :hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 #skills h1{
     margin: 15px 0px;
     margin-left: 0px;

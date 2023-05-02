@@ -163,6 +163,7 @@ header h2{
     font-weight: 900;
     color:black;
 }
+
 #skills{
     display: flexbox;
     border-bottom:2px solid #438BCF ;
@@ -173,6 +174,11 @@ header h2{
     height: 1000px;
     
     
+}
+
+#skills h1{
+    font-size: 40px;
+    margin-left: 400px;
 }
 #skills-page header a{
     position:initial;
@@ -195,22 +201,23 @@ border-bottom:3px dotted #438BCF;
     flex-direction: row;
 }
 
-#img-group1 img{
+#img-group1 img , #img-group2 img{
     width: 300px;
     border: 2px solid black;
     box-shadow: 7px 6px grey;
     margin: 10px 25px;
+    transition: transform .2s;
+   
 }
-#img-group2 img{
-    width: 300px;
-    border: 2px solid black;
-    box-shadow: 7px 6px grey;
-    margin: 10px 25px;
+#img-group1 img:hover{
+    transform:scale(2.0);
+   
 }
-#skills h1{
-    font-size: 40px;
-    margin-left: 400px;
+#img-group2 img:hover{
+    transform:scale(2.0);
+
 }
+
 #current-proj{
     display: inline-block;
     position:relative;
